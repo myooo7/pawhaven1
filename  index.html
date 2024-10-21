@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paw Haven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="paw">Paw</span>
+                <span class="haven">Haven</span>
+            </div>
+            <div class="nav-links">
+                <button class="btn btn-register">회원 가입</button>
+                <button class="btn btn-login">로그인</button>
+                <div class="user-profile">
+                    <img src="images/cartoon-loopy-avatar.jpeg" alt="사용자 아바타" class="avatar">
+                    <span class="username">MYOX1N</span>
+                </div>
+            </div>
+        </nav>
+        <div class="section-buttons">
+            <button class="section-btn" onclick="showSection('home')">홈</button>
+            <button class="section-btn" onclick="showSection('activities')">활동</button>
+            <button class="section-btn" onclick="showSection('community')">커뮤니티</button>
+            <button class="section-btn" onclick="showSection('rescue')">구조</button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section id="home" class="active">
+            <div class="banner">
+                <h1><span class="highlight">Things and creatures,</span><br><span class="highlight">love and symbiosis</span></h1>
+            </div>
+
+            <div class="philosophy">
+                <h2>우리의 동물 보호 이념</h2>
+                <p>우리는 동물을 보호하고, 생태계의 균형을 유지하며, 동물 보호에 대한 대중의 인식을 높이기 위해 노력합니다. 모든 생명은 존중받고 보호받을 가치가 있습니다.</p>
+            </div>
+
+            <div class="activities">
+                <h2>예정된 동물 보호 활동</h2>
+                <div id="activity-cards"></div>
+            </div>
+
+            <div class="community">
+                <h2>우리의 커뮤니티에 참여하세요</h2>
+                <p>여기에서 다른 동물 애호가들과 소통하고, 경험을 공유하며, 보호 전략에 대해 논의할 수 있습니다.</p>
+                <div id="community-posts"></div>
+                <button class="btn btn-primary" onclick="showSection('forum')">토론 참여</button>
+            </div>
+
+            <div class="rescue">
+                <h2>동물 구조 센터</h2>
+                <div id="rescue-animals"></div>
+                <button class="btn btn-secondary" onclick="showSection('rescue')">구조 참여 방법 알아보기</button>
+            </div>
+        </section>
+
+        <section id="forum" class="hidden">
+            <h2>토론 포럼</h2>
+            <!-- 포럼 내용 추가 -->
+        </section>
+
+        <section id="rescue" class="hidden">
+            <h2>동물 구조 상세 정보</h2>
+            <!-- 구조 상세 정보 추가 -->
+        </section>
+
+        <section id="register" class="hidden">
+            <h2>회원 가입</h2>
+            <!-- 가입 양식 추가 -->
+        </section>
+
+        <section id="login" class="hidden">
+            <h2>로그인</h2>
+            <!-- 로그인 양식 추가 -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section contact-info">
+                <h3>연락처</h3>
+                <p><i class="fas fa-envelope"></i> 이메일: myox1n99@gmail.com</p>
+                <p><i class="fas fa-phone"></i> 전화: 123-4567-8910</p>
+            </div>
+            <div class="footer-section social-links">
+                <h3>소셜 미디어</h3>
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i> my_zoo</a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i> my_zoo</a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i> my_zoo</a>
+            </div>
+            <div class="footer-section friend-links">
+                <h3>관련 링크</h3>
+                <ul>
+                    <li><a href="#">동물 보호 협회</a></li>
+                    <li><a href="#">야생동물 구조 센터</a></li>
+                    <li><a href="#">반려동물 입양 정보</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2024 Paw Haven, 모든 권리 보유</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
